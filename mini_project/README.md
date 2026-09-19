@@ -1,16 +1,43 @@
-# React + Vite
+# Job Card UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React job listing interface built with Vite. The application displays job opportunities from popular companies in reusable cards with position, employment type, experience level, salary, location, and company branding.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive grid layout
+- Reusable `Card` component
+- Job listings for 10 companies
+- Company logos loaded from external image URLs
+- Employment type and experience-level tags
+- Salary and location information
+- Save and Apply Now buttons
+- Hover animations and responsive styling
+- Bookmark icon using `lucide-react`
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- JavaScript
+- CSS
+- Lucide React
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+mini_project/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Card.jsx
+│   │   └── User.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── eslint.config.js
+├── vite.config.js
+├── package.json
+└── README.md

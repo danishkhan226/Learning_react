@@ -1,16 +1,43 @@
-# React + Vite
+# Understanding React Props
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that demonstrates how to pass data from a parent component to a reusable child component using props.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The app renders three profile cards. Each card receives the following props from `App.jsx`:
 
-## React Compiler
+- `user` - The person's name
+- `age` - The person's age
+- `image` - The profile image URL
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The reusable `Card` component uses these props to display profile information dynamically.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Reusable React `Card` component
+- Passing data from parent to child components
+- Rendering dynamic values with props
+- Profile images with accessible `alt` text
+- Responsive card styling
+- Vite hot module replacement during development
+
+## Technologies Used
+
+- React
+- React DOM
+- Vite
+- JavaScript
+- CSS
+- ESLint
+
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   └── card.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
