@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #111;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 10px;
+  background: #111;
+}
+
+.card {
+  width: min(100%, 253px);
+  min-height: 285px;
+  padding: 16px 22px;
+  border: 1px solid #888;
+  border-radius: 9px;
+  background: #222;
+  text-align: center;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.45rem, 7vw, 1.7rem);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.description {
+  max-width: 190px;
+  margin: 16px auto 14px;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.btn {
+  padding: 8px 17px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.btn:hover {
+  background: #bbb;
+}
+
+.btn:focus-visible {
+  outline: 2px solid #82bee9;
+  outline-offset: 3px;
+}
