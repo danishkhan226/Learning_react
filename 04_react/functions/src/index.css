@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+.btn{
+    background-color: red;
+    color: black;
+}
+
+.box{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.page1{
+    background-color: yellow;
+    height: 500px;
+}
+
+.page2{
+    background-color: blue;
+    height: 500px;
+}
+
+.page3{
+    background-color: gray;
+    height: 500px;
+}
